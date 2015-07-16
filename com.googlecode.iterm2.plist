@@ -1061,7 +1061,7 @@
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
 	<key>NSWindow Frame Preferences</key>
-	<string>269 153 924 485 0 0 1440 878 </string>
+	<string>186 123 924 485 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 4 1440 874 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
@@ -1798,6 +1798,10 @@
 	</array>
 	<key>NoSyncNeverRemindPrefsChangesCopy</key>
 	<true/>
+	<key>NoSyncTimeOfLastPromo</key>
+	<real>458730886.48909402</real>
+	<key>NoSyncTimeOfLastPromoDownload</key>
+	<real>458730886.48930401</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -1844,7 +1848,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/tulloch/Code/dots</string>
+	<string>/Users/mnencia/lib/dots</string>
 	<key>PromptOnQuit</key>
 	<false/>
 	<key>QuitWhenAllWindowsClosed</key>
@@ -1862,7 +1866,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2013-11-26T14:57:18Z</date>
+	<date>2015-07-16T09:14:40Z</date>
 	<key>SUSkippedVersion</key>
 	<string>1.0.0.20131116</string>
 	<key>SavePasteHistory</key>
@@ -1920,6 +1924,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>1.0.0.20131124</string>
+	<string>2.1.1</string>
 </dict>
 </plist>
