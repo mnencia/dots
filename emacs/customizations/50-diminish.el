@@ -19,7 +19,7 @@
 
 (diminish 'auto-complete-mode)
 (diminish 'yas-minor-mode)
-(diminish 'magit-auto-revert-mode)
+;(diminish 'magit-auto-revert-mode)
 (diminish 'paredit-mode)
 (diminish 'auto-fill-function)
 (diminish 'isearch-mode)
