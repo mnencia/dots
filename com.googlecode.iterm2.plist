@@ -968,9 +968,9 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>44 307 606 456 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 74 1277 703 0 0 1280 777 </string>
+	<string>1 107 1060 664 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>1440 257 1914 1057 1440 257 1920 1057 </string>
+	<string>103 358 570 352 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>162 91 570 351 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
@@ -2445,7 +2445,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>4223BFC2-47FC-436D-B9A7-658339123683</string>
 	<key>NoSyncLastTipTime</key>
-	<real>494688175.40741497</real>
+	<real>495621768.12205303</real>
 	<key>NoSyncNeverRemindPrefsChangesCopy</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
@@ -2520,6 +2520,15 @@
 		<string>0054</string>
 		<string>0055</string>
 		<string>0056</string>
+		<string>0057</string>
+		<string>0058</string>
+		<string>0059</string>
+		<string>0060</string>
+		<string>0061</string>
+		<string>0062</string>
+		<string>0063</string>
+		<string>0064</string>
+		<string>0065</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
@@ -2591,7 +2600,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-09-01T08:53:33Z</date>
+	<date>2016-10-24T07:01:15Z</date>
 	<key>SUSkippedVersion</key>
 	<string>3.0.0</string>
 	<key>SavePasteHistory</key>
@@ -2649,6 +2658,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.7</string>
+	<string>3.0.10</string>
 </dict>
 </plist>

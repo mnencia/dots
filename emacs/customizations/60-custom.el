@@ -91,9 +91,5 @@
                     :height 100
                     :weight 'light)
 
-(global-hl-line-mode 1)
-(set-face-background 'hl-line "#3e4446")
-(set-face-foreground 'highlight nil)
-
 (provide '60-custom)
 ;;; 60-custom.el ends here
