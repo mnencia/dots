@@ -57,6 +57,7 @@
 (depends-on "god-mode")
 (depends-on "google-c-style")
 (depends-on "google-this")
+(depends-on "groovy-mode")
 (depends-on "haml-mode")
 (depends-on "hamlet-mode")
 (depends-on "haskell-mode")
