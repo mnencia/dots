@@ -9,11 +9,40 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(LaTeX-amsmath-label "eq:")
- '(LaTeX-command-style (quote (("" "%(PDF)%(latex) -file-line-error %S%(PDFout)"))))
+ '(LaTeX-command-style
+   (quote
+    (("" "%(PDF)%(latex) -file-line-error %S%(PDFout)"))))
  '(LaTeX-label-function (quote reftex-label))
  '(TeX-PDF-mode t)
  '(TeX-auto-save t)
- '(TeX-command-list (quote (("LaTeX" "%`%l%(mode)%' %t" TeX-run-TeX nil (latex-mode doctex-mode) :help "Run LaTeX") ("AmSTeX" "%(PDF)amstex %`%S%(PDFout)%(mode)%' %t" TeX-run-TeX nil (ams-tex-mode) :help "Run AMSTeX") ("ConTeXt" "texexec --once --texutil %(execopts)%t" TeX-run-TeX nil (context-mode) :help "Run ConTeXt once") ("ConTeXt Full" "texexec %(execopts)%t" TeX-run-TeX nil (context-mode) :help "Run ConTeXt until completion") ("BibTeX" "bibtex %s" TeX-run-BibTeX nil t :help "Run BibTeX") ("Biber" "biber %s" TeX-run-Biber nil t :help "Run Biber") ("View" "%V" TeX-run-discard-or-function t t :help "Run Viewer") ("Print" "%p" TeX-run-command t t :help "Print the file") ("Queue" "%q" TeX-run-background nil t :help "View the printer queue" :visible TeX-queue-command) ("File" "%(o?)dvips %d -o %f " TeX-run-command t t :help "Generate PostScript file") ("Index" "makeindex %s" TeX-run-command nil t :help "Create index file") ("Check" "lacheck %s" TeX-run-compile nil (latex-mode) :help "Check LaTeX file for correctness") ("Spell" "(TeX-ispell-document \"\")" TeX-run-function nil t :help "Spell-check the document") ("Clean" "TeX-clean" TeX-run-function nil t :help "Delete generated intermediate files") ("Clean All" "(TeX-clean t)" TeX-run-function nil t :help "Delete generated intermediate and output files") ("Other" "" TeX-run-command t t :help "Run an arbitrary command"))))
+ '(TeX-command-list
+   (quote
+    (("LaTeX" "%`%l%(mode)%' %t" TeX-run-TeX nil
+      (latex-mode doctex-mode)
+      :help "Run LaTeX")
+     ("AmSTeX" "%(PDF)amstex %`%S%(PDFout)%(mode)%' %t" TeX-run-TeX nil
+      (ams-tex-mode)
+      :help "Run AMSTeX")
+     ("ConTeXt" "texexec --once --texutil %(execopts)%t" TeX-run-TeX nil
+      (context-mode)
+      :help "Run ConTeXt once")
+     ("ConTeXt Full" "texexec %(execopts)%t" TeX-run-TeX nil
+      (context-mode)
+      :help "Run ConTeXt until completion")
+     ("BibTeX" "bibtex %s" TeX-run-BibTeX nil t :help "Run BibTeX")
+     ("Biber" "biber %s" TeX-run-Biber nil t :help "Run Biber")
+     ("View" "%V" TeX-run-discard-or-function t t :help "Run Viewer")
+     ("Print" "%p" TeX-run-command t t :help "Print the file")
+     ("Queue" "%q" TeX-run-background nil t :help "View the printer queue" :visible TeX-queue-command)
+     ("File" "%(o?)dvips %d -o %f " TeX-run-command t t :help "Generate PostScript file")
+     ("Index" "makeindex %s" TeX-run-command nil t :help "Create index file")
+     ("Check" "lacheck %s" TeX-run-compile nil
+      (latex-mode)
+      :help "Check LaTeX file for correctness")
+     ("Spell" "(TeX-ispell-document \"\")" TeX-run-function nil t :help "Spell-check the document")
+     ("Clean" "TeX-clean" TeX-run-function nil t :help "Delete generated intermediate files")
+     ("Clean All" "(TeX-clean t)" TeX-run-function nil t :help "Delete generated intermediate and output files")
+     ("Other" "" TeX-run-command t t :help "Run an arbitrary command"))))
  '(TeX-electric-sub-and-superscript t)
  '(TeX-master nil)
  '(TeX-parse-self t)
@@ -28,8 +57,10 @@
  '(auto-save-default nil)
  '(coffee-tab-width 2)
  '(column-number-mode t)
- '(custom-enabled-themes (quote (solarized-dark)))
- '(custom-safe-themes (quote ("fc5fcb6f1f1c1bc01305694c59a1a861b008c534cae8d0e48e4d5e81ad718bc6" default)))
+ '(custom-enabled-themes (quote (solarized)))
+ '(custom-safe-themes
+   (quote
+    ("8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" default)))
  '(dired-details-hidden-string "")
  '(dired-use-ls-dired nil)
  '(electric-indent-mode t)
@@ -38,7 +69,7 @@
  '(elpy-default-minor-modes (quote (eldoc-mode yas-minor-mode auto-complete-mode)))
  '(flx-ido-mode t)
  '(flycheck-c/c++-googlelint-executable "/Users/mnencia/bin/cpplint")
-; '(flycheck-clang-language-standard "c++11")
+ '(frame-background-mode (quote dark))
  '(gist-view-gist nil)
  '(global-auto-complete-mode t)
  '(global-flycheck-mode t nil (flycheck))
@@ -61,7 +92,8 @@
  '(make-backup-files nil)
  '(markdown-css-path mkdown-css-file-name)
  '(markdown-reference-location (quote end))
- '(preview-TeX-style-dir "/Users/mnencia/.emacs.d/.cask/24.5.1/elpa/auctex-11.88.6/latex" t)
+ '(preview-TeX-style-dir
+   "/Users/mnencia/.emacs.d/.cask/24.5.1/elpa/auctex-11.88.6/latex" t)
  '(projectile-global-mode t)
  '(projectile-mode-line-lighter "")
  '(projectile-use-git-grep t)
@@ -69,11 +101,42 @@
  '(reftex-label-alist (quote (("thm" nil nil nil nil nil -3))))
  '(reftex-plug-into-AUCTeX t)
  '(rng-nxml-auto-validate-flag nil)
- '(safe-local-variable-values (quote ((todo-categories "Todo") (flycheck-disabled-checkers (quote (emacs-lisp emacs-lisp-checkdoc))) (eval when (and (buffer-file-name) (file-regular-p (buffer-file-name)) (string-match-p "^[^.]" (buffer-file-name))) (emacs-lisp-mode) (when (fboundp (quote flycheck-mode)) (flycheck-mode -1)) (unless (featurep (quote package-build)) (let ((load-path (cons ".." load-path))) (require (quote package-build)))) (package-build-minor-mode)) (TeX-master . "master") (TeX-master . t) (whitespace-line-column . 80) (lexical-binding . t))))
+ '(safe-local-variable-values
+   (quote
+    ((todo-categories "Todo")
+     (flycheck-disabled-checkers
+      (quote
+       (emacs-lisp emacs-lisp-checkdoc)))
+     (eval when
+	   (and
+	    (buffer-file-name)
+	    (file-regular-p
+	     (buffer-file-name))
+	    (string-match-p "^[^.]"
+			    (buffer-file-name)))
+	   (emacs-lisp-mode)
+	   (when
+	       (fboundp
+		(quote flycheck-mode))
+	     (flycheck-mode -1))
+	   (unless
+	       (featurep
+		(quote package-build))
+	     (let
+		 ((load-path
+		   (cons ".." load-path)))
+	       (require
+		(quote package-build))))
+	   (package-build-minor-mode))
+     (TeX-master . "master")
+     (TeX-master . t)
+     (whitespace-line-column . 80)
+     (lexical-binding . t))))
  '(scala-indent:add-space-for-scaladoc-asterisk t)
  '(scala-indent:use-javadoc-style t)
  '(scalable-fonts-allowed t)
  '(scss-compile-at-save nil)
+ '(solarized-termcolors 256)
  '(vc-follow-symlinks t)
  '(yas-global-mode t nil (yasnippet))
  '(yas-triggers-in-field t))
