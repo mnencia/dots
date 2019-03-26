@@ -57,7 +57,6 @@
  '(auto-save-default nil)
  '(coffee-tab-width 2)
  '(column-number-mode t)
- '(custom-enabled-themes (quote (solarized)))
  '(custom-safe-themes
    (quote
     ("8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" default)))
@@ -136,7 +135,6 @@
  '(scala-indent:use-javadoc-style t)
  '(scalable-fonts-allowed t)
  '(scss-compile-at-save nil)
- '(solarized-termcolors 256)
  '(vc-follow-symlinks t)
  '(yas-global-mode t nil (yasnippet))
  '(yas-triggers-in-field t))
